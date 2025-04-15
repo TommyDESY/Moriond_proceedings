@@ -1,0 +1,222 @@
+%====================================================================%
+%                  MORIOND.TEX                                       %
+%====================================================================%
+
+\documentclass{moriond}
+
+
+\bibliographystyle{unsrt}    
+% for BibTeX - sorted numerical labels by order of
+% first citation.
+
+% A useful Journal macro
+\def\Journal#1#2#3#4{{#1} {\bf #2}, #3 (#4)}
+
+% Some useful journal names
+\def\NCA{\em Nuovo Cimento}
+\def\NIM{\em Nucl. Instrum. Methods}
+\def\NIMA{{\em Nucl. Instrum. Methods} A}
+\def\NPB{{\em Nucl. Phys.} B}
+\def\PLB{{\em Phys. Lett.}  B}
+\def\PRL{\em Phys. Rev. Lett.}
+\def\PRD{{\em Phys. Rev.} D}
+\def\ZPC{{\em Z. Phys.} C}
+
+% Some other macros used in the sample text
+\def\st{\scriptstyle}
+\def\sst{\scriptscriptstyle}
+\def\mco{\multicolumn}
+\def\epp{\epsilon^{\prime}}
+\def\vep{\varepsilon}
+\def\ra{\rightarrow}
+\def\ppg{\pi^+\pi^-\gamma}
+\def\vp{{\bf p}}
+\def\ko{K^0}
+\def\kb{\bar{K^0}}
+\def\al{\alpha}
+\def\ab{\bar{\alpha}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\CPbar{\hbox{{\rm CP}\hskip-1.80em{/}}}
+\def\vub{V_{ub}}
+\def\vcb{V_{cb}}
+\def\btodlnu{B \to D\ell\nu}
+\def\btodstlnu{B \to D^*\ell\nu}
+\def\costby{\cos\theta_{BY}}
+\def\eecl{E_{\rm ECL}^{\rm extra}}
+\def\mmiss{M_{\rm miss}^2}
+\def\zdiff{z_{\rm diff}}
+
+%temp replacement due to no font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                %
+%    BEGINNING OF TEXT                           %
+%                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Photo}{\includegraphics[height=35mm]{mypicture}}
+%\newcommand{\Photo}{}
+
+\begin{document}
+\vspace*{4cm}
+\title{Measurements of semileptonic and leptonic beauty meson decays at Belle II}
+
+
+\author{Tommy Martinov, on behalf of the Belle II collaboration}
+
+\address{DESY, Notkestr. 85,\\
+Hamburg 22607, Germany}
+
+\maketitle\abstracts{
+We present three measurements...}
+
+\section{CKM matrix elements $\vub$ and $\vcb$}
+The Cabibbo–Kobayashi–Maskawa (CKM) matrix is a $3\times3$ unitary matrix which is the source of all flavour-violating interactions in the Standard Model (SM). The CKM matrix was introduced in order to explain the experimentally observed \textit{charge-parity} violation effects. Precise measurements of the magnitudes of all CKM matrix elements are crucial to test the SM. Two of these elements known with the lowest precision are $\vub$ and $\vcb$. The magnitudes of these two elements are usually measured via semileptonic $B$ meson decays either using the exclusive method, where a specific meson is reconstructed such as a $\pi$ to measure $|\vub|$, or the inclusive method where no explicit requirements are applied on the hadronic system. The two methods yield values which differ by $3\sigma$ for both $|\vub|$ and $|\vcb|$~\cite{hflav}. Measurements of $|\vub|$ via purely leptonic $B$ decays however are expected to yield values with negligible theoretical uncertainty.
+
+\subsection{Measurement of $|\vcb|$ via $\btodlnu$ decays}
+The value of $|\vcb|$ is commonly extracted via $\btodstlnu$ but studying $\btodlnu$ decays yields several advantages. Usually, the $D^*$ meson is reconstructed via its $D^* \to D^0 \pi^+$\footnote{Charge conjugation is implied throughout the text.} decay in order to avoid having to reconstruct a low momentum neutral $\pi$. Because of that only charged $D^*$ isospin state is accessible in these measurements. Furthermore, the reconstruction of the low momentum $\pi^+$ in $D^*$ decays represents the leading systematic uncertainty of $|\vcb|$ measurements via $\btodstlnu$ decays. Both of these issues are avoided when using $\btodlnu$ decays which are described by a form factor whose calculation is more precise than that of $\btodstlnu$ form factors. $\btodlnu$ decays can be studied through various parameters such as $q^2$, the invariant leptonic system mass squared, defined as $q^2 = (p_\ell + p_\nu)^2$, where $p_\ell$ and $p_\nu$ are the lepton and neutrino four-momenta. Using the $B$ and $D$ meson masses $m_B$ and $m_D$, the recoil parameter $w$ is defined as
+\begin{equation}
+    w = \frac{m_B^2 + m_D^2 - q^2}{2m_Bm_D}.
+\end{equation}
+The $\btodlnu$ differential decay rate as a function of $w$ is expressed as~\cite{hqs}
+\begin{equation}
+    \frac{d\Gamma(\btodlnu)}{dw} = \frac{G_F^2m_D^3}{48\pi^3} (m_B+m_D)^2(w^2-1)^{3/2}\eta_{\rm EW}^2\mathcal{G}^2(w)|\vcb|^2,
+\end{equation}
+where $m_B$ and $m_D$ are the $B$ and $D$ meson masses respectively, $\eta_{\rm EW} = 1.0066 \pm 0.0002$~\cite{etaew} is the electroweak correction and $\mathcal{G}(w)$ is the $\btodlnu$ form factor. The Belle II measurement is performed by reconstructing both $B^0$ and $B^+$ decays without explicitly reconstructing the partner $B$ meson stemming from the $e^+e^- \to \Upsilon(4S) \to B\bar{B}$ process. This method, known as inclusive tagging, allows to maximise the number of events available. Charged and neutral $D$ mesons are reconstructed via the decays $D^+ \to K^- \pi^+ \pi^+$ and $D^0 \to K^- \pi^+$. The signal is extracted with a two-dimensional fit to $w$ and the $\costby$ variable defined as
+\begin{equation}\label{equ:costby}
+    \costby = \frac{2E^*_BE^*_Y-m_B^2-m_Y^2}{2|p_B^*||p_Y^*|},
+\end{equation}
+where $Y$ represents the $D\ell$ two-body system and $E^*$ and $p^*$ are the energies and momenta of the $B$ meson and the $Y$ system in the centre-of-mass frame. The $\costby$ distribution in the $B^+ \to \bar{D}^0e^+\nu_e$ channel is shown in Figure~\ref{fig:cos_theta_BY}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=1.1]{cos_theta_BY.pdf}
+    \caption{Distribution of $\costby$ for the $B^+ \to \bar{D}^0e^+\nu_e$ channel. The black points show the Belle II data. The stacked histograms are simulated events. The true and fake $D$ components respectively represent events with a correctly reconstructed $D$ meson which doesn't stem from a $B \to D^{(*)} \ell \nu$ decay and events with a misreconstructed $D$ meson. The panel at the bottom shows the data -- simulation difference normalised to the total estimated uncertainty.}
+    \label{fig:cos_theta_BY}
+\end{figure}
+The postfit 2D $w:\costby$ distribution as 10 $\costby$ distributions in 10 bins of $w$ is shown in Figure~\ref{fig:2d_fit}. The fit is performed simultaneously on four separate channels: $D^0e^-$, $D^0\mu^-$, $D^+e^-$ and $D^+\mu^-$ to extract the individual $B^0 \to D^+\ell^-\nu$ and $B^- \to D^0\ell^-\nu$ branching fractions and a lepton flavour universality (LFU) test. The branching fractions are compared to the latest Heavy Flavour Averaging Group (HFLAV) averages~\cite{hflav} in Table~\ref{tab:br} and the LFU test reads: $\mathcal{B}(B \to D e \nu) / \mathcal{B}(B \to D \mu \nu) = 1.02 \pm 0.03$.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=1.1]{2d_fit.pdf}
+    \caption{Fitted distribution of $\costby$ in bins of $w$ in the $D^0e^-$ channel.}
+    \label{fig:2d_fit}
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \caption{$\btodlnu$ branching fractions as extracted from the fit compared to the latest HFLAV averages~\cite{hflav}.}
+    \begin{tabular}{|c c c|}
+         \hline
+         & Belle II & HFLAV \\
+         \hline
+        $\mathcal{B}(B \to D^- \ell^+ \nu)$ & $2.06 \pm 0.12 \%$ & $2.12 \pm 0.06 \%$ \\
+        % \hline
+        $\mathcal{B}(B \to \bar{D}^0 \ell^+ \nu)$ & $2.31 \pm 0.10 \%$ & $2.21 \pm 0.06 \%$ \\
+         \hline
+    \end{tabular}
+    \label{tab:br}
+\end{table}
+The differential decay rate $\Delta\Gamma/dw$ in 10 bins of $w$ is obtained from the same fit. The values $\Delta\Gamma/dw$ are fitted to the differential decay rate expressed using the Bourrely, Caprini, Lellouch (BCL)~\cite{bcl} form factor parametrisation with a $\chi^2$ fit with lattice QCD constraints~\cite{fmilc, hpqcd}. The fitted differential decay rate is illustrated in Figure~\ref{fig:bcl_fit}. From this fit, a value of $|\vcb|$ is extracted which can be compared to the exclusive and inclusive averages~\cite{hflav}:
+% \begin{align}
+%     |\vcb|_{\rm BCL} &= (39.2 \pm 0.8) \times 10^{-3} \\
+%     |\vcb|_{\rm excl.} &= (39.77 \pm 0.46) \times 10^{-3} \\
+%     |\vcb|_{\rm incl.} &= (41.97 \pm 0.48) \times 10^{-3}.
+% \end{align}
+\bea
+    |\vcb|_{\rm BCL} &= (39.2 \pm 0.8) \times 10^{-3} \\
+    |\vcb|_{\rm excl.} &= (39.77 \pm 0.46) \times 10^{-3} \\
+    |\vcb|_{\rm incl.} &= (41.97 \pm 0.48) \times 10^{-3}.
+\eea
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.9]{bcl_fit.pdf}
+    \caption{Differential decay rate fit. The black points are the 10 values of $\Delta\Gamma/dw$ extracted from the 2D fit described in the text. The green line represents the central value of the fitted distribution using the BCL form factor parametrisation and the green bands represent the 1, 2 and 3$\sigma$ uncertainties from darker to lighter.}
+    \label{fig:bcl_fit}
+\end{figure}
+
+\subsection{Measurement of the $B^+ \to \tau \nu$ branching fraction}
+Purely leptonic $B$ meson decays represent the theoretically cleanest channel to measure $|\vub|$ but they are helicity suppressed which makes them extremely hard to study. The $B^+ \to \ell^+ \nu$ branching fraction is expressed as
+\begin{equation}
+    \mathcal{B}(B^+ \to \ell^+\nu_\ell) = \frac{G_F^2m_B}{8\pi}m_\ell^2\left( 1 - \frac{m_\ell^2}{m_B^2} \right)^2 f_B^2|V_{ub}|^2\tau_B,
+\end{equation}
+where $m_\ell$ is the mass of the lepton, $f_B = 190 \pm 1.3$ MeV~\cite{flag} is the $B$ meson decay constant which can be extracted from lattice QCD and $\tau_B$ is the $B$ meson lifetime. So far, no individual measurement of $\mathcal{B}(B^+ \to \ell^+\nu_\ell)$ has ever crossed the $5\sigma$ discovery threshold. The Belle II measurement~\cite{gio} is performed by reconstructing the partner $B$ meson in its hadronic decay channels (a method called \textit{hadronic tagging}). While it reduces the reconstruction efficiency significantly this strategy is necessary to constrain the event kinematics despite the presence of multiple final-state undetected neutrinos on the signal side. The $\tau$ lepton is reconstructed in four channels to maximise the total efficiency: $\tau \to e\nu\nu$, $\tau \to \mu\nu\nu$, $\tau \to \pi\nu$ and $\tau \to \rho\nu$. The four channels amount to a total of $71.5\%$ of the total $\tau$ decay rate~\cite{pdg}. The signal is extracted from a 2D fit to the $\eecl$ and $\mmiss$ which are respectively defined as the total energy from neutral clusters not associated with either $B$ meson and the squared missing mass of the event. The latter variable is calibrated using three separate control samples to correct $B\bar{B}$ backgrounds, signal decays with $\tau$ leptonic modes and signal decays with $\tau$ hadronic modes. The fit is a simultaneous binned maximum likelihood fit of all four signal $\tau$ decays channels. The postfit $\eecl$ and $\mmiss$ distributions are shown in Figure~\ref{fig:gio_distributions}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{eeclextra.pdf}
+    \includegraphics[scale=0.5]{mmiss.pdf}
+    \caption{Distributions of the postfit $\eecl$ (left) and $\mmiss$ (right) variables. The signal is shown multiplied by 30.}
+    \label{fig:gio_distributions}
+\end{figure}
+The measured branching fraction reads
+\begin{equation}
+    \mathcal{B}(B^+ \to \tau^+\nu) = (1.24 \pm 0.41 \pm 0.19)\times 10^{-4},
+\end{equation}
+where the first uncertainty is statistical and the second systematic, yielding a significance of $3.0\sigma$ ($2.7\sigma$ expected significance). The measured branching fraction is compared to previous measurements  in Figure~\ref{fig:Final_Unblinding_}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.4]{Final_Unblinding_.pdf}
+    \caption{Comparison between the $B \to \tau\nu$ branching fraction measured by Belle II (pink), BaBar (red) and Belle (blue). The branching fractions obtained assuming the exclusive (inclusive) value of $|\vub| = (3.42 \pm 0.12)\times 10^{-3}$ ($|\vub| = (4.06 \pm 0.16)\times 10^{-3}$) is shown as a yellow (green) band.}
+    \label{fig:Final_Unblinding_}
+\end{figure}
+
+\section{Lepton flavour universality tests}
+In the SM, the $W$ boson is expected to couple to the three lepton families with the same strength. A violation of LFU would therefore be a clear signature of non-SM couplings with leptons. A key LFU test involves measuring the ratios of branching fractions $R(D^{(*)}) = \mathcal{B}(B \to D^{(*)}\tau\nu)/\mathcal{B}(B \to D^{(*)}\ell\nu)$ with $\ell=e,\mu$. These ratios have been measured several times by BaBar, Belle, LHCb and now Belle II. The average of the combined $R(D)-R(D^*)$ value is in tension with the SM expectation at a level of about $3.1\sigma$ (see Figure 26 in Ref.~\cite{hflav} for a summary).
+
+\subsection{Test of lepton flavour universality with measurements of $R(D^+)$ and $R(D^{*+})$}
+The first Belle II combined $R(D)-R(D^*)$ measurement is presented here. The measurement is performed with $B^0$ decays by reconstructing the partner $B$ meson in its semileptonic decay channels. This method allows to constrain the kinematics of signal-side decays similarly to the hadronic tagging strategy mentioned earlier. Semileptonic $B$ decays having an overall larger branching fraction than hadronic decays, the semileptonic tagging method allows to significantly increase the reconstruction efficiency. In this measurement, the $\tau$ is reconstructed in its leptonic decays and $D$ mesons are reconstructed through various decays to charged and neutral $K$ and $\pi$ with a total of 26 decay modes on the tag side and 13 on the signal. Then, a boosted decision trees (BDT) algorithm is used to classify events in three categories: semitauonic signal events, (light) semileptonic signal events and background events. The most discriminating feature of this BDT is the $\costby$ variable defined in Equation~\ref{equ:costby} with $Y=D\ell$ or $D^*\ell$. Each event is therefore assigned a BDT score $z_\tau$, $z_\ell$ and $z_{\rm bgk}$ and the signal is extracted from a two-dimensional fit to $z_\tau$ and $\zdiff = z_\ell - z_{\rm bkg}$. Events used in the fit are split in four categories: semitauonic, semileptonic, background from $B \to D^{**}\ell\nu$ decays and other backgrounds. The densities of events in these categories in the $\zdiff-z_\tau$ plane are shown in Figure~\ref{fig:2d_rd}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.7]{2d_rd.pdf}
+    \caption{Densities of the fit categories in the $\zdiff-z_\tau$ plane. The semitauonic events are shown in green (top left, semileptonic events in orange (top right), background events from $B \to D^{**}\ell\nu$ decays in blue (bottom left) and other backgrounds in red (bottom right). The density of data events is shown in the background of each figure as a binned histogram. The bin edges chosen for the fit are overlaid on each figure.}
+    \label{fig:2d_rd}
+\end{figure}
+
+
+
+
+
+\section*{References}
+
+\begin{thebibliography}{99}
+% \bibitem{ja}C Jarlskog in {\em CP Violation}, ed. C Jarlskog
+% (World Scientific, Singapore, 1988).
+
+% \bibitem{ma}L. Maiani, \Journal{\PLB}{62}{183}{1976}.
+% \bibitem{bu}J.D. Bjorken and I. Dunietz, \Journal{\PRD}{36}{2109}{1987}.
+% \bibitem{bd}C.D. Buchanan {\it et al}, \Journal{\PRD}{45}{4088}{1992}.
+\bibitem{hflav}S. Banerjee {\it et al}, arXiv:2411.18639
+\bibitem{hqs}M. Neubert, \Journal{Phys. Rept}{245}{259}{1994}
+\bibitem{etaew}A. Sirlin, \Journal{\NPB}{196}{83}{1982}
+\bibitem{bcl}C. Bourrely, I. Caprini and L. Lellouch, \Journal{\PRD}{82}{099902}{2010}
+\bibitem{fmilc}J. A. Bailey {\it et al}, \Journal{\PRD}{92}{034506}{2015}
+\bibitem{hpqcd}H. Na {\it et al}, \Journal{\PRD}{92}{054510}{2015}
+\bibitem{flag}Y. Aoki {\it et al}, arXiv:2411.04268
+\bibitem{gio}I. Adachi {\it et al}, arXiv:2502.04885
+\bibitem{pdg}S. Navas {\it et al}, \Journal{\PRD}{110}{030001}{2024}
+
+
+\end{thebibliography}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% End of moriond.tex  %
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
